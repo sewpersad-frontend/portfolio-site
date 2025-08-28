@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Anwar Sewpersad – Portfolio</title>
+  <meta name="description" content="Portfolio van Mohamed Anwar Sewpersad – Front‑end developer in opleiding. Projecten, skills en contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111827; --muted:#9ca3af; --accent:#22d3ee; --text:#e5e7eb; --ring:#22d3ee33;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    .pill{display:inline-block;padding:6px 12px;border:1px solid #2a3442;border-radius:999px;color:var(--muted);font-size:12px;letter-spacing:.4px}
+    header{display:flex;align-items:center;gap:16px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#0ea5e9,#22d3ee);display:grid;place-items:center;font-weight:800;color:#001018;box-shadow:0 10px 30px #0ea5e955}
+    .nav a{opacity:.9;margin-left:16px}
+    .hero{margin:40px 0 28px;display:grid;gap:16px}
+    .hero h1{font-size:32px;line-height:1.2;margin:0}
+    .hero p{color:var(--muted);margin:0}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .btn{padding:12px 16px;border-radius:14px;border:1px solid #2a3442;background:#0e1620;cursor:pointer;transition:transform .06s ease, box-shadow .2s ease}
+    .btn.primary{background:linear-gradient(135deg,#0ea5e9,#22d3ee); color:#001018;border:none}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px var(--ring)}
+    .section{margin:28px 0}
+    .section h2{font-size:20px;margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid #1f2937;border-radius:18px;padding:16px;position:relative;overflow:hidden}
+    @media(min-width:720px){.card{grid-column:span 6}}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .card p{margin:0 0 12px;color:var(--muted)}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+    .tag{font-size:12px;padding:6px 10px;border:1px solid #2a3442;border-radius:999px;color:#b8c0cc}
+    .links{display:flex;gap:10px;flex-wrap:wrap}
+    .link{display:inline-flex;gap:8px;align-items:center;padding:10px 12px;border-radius:12px;border:1px solid #2a3442}
+    .link:hover{border-color:#334155}
+    footer{margin:36px 0 12px;color:var(--muted);font-size:14px}
+    .divider{height:1px;background:#1f2937;margin:20px 0}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <div class="pill">Front‑end developer in opleiding</div>
+          <div style="font-weight:800;margin-top:6px">Mohamed Anwar Sewpersad</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projecten</a>
+        <a href="#about">Over</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+```
+<section class="hero" id="about">
+  <h1>Ik bouw schone, snelle webinterfaces.<br/>Focus op HTML, CSS en JavaScript.</h1>
+  <p>Student bij Winc Academy, nachtuil met discipline. Op zoek naar een front‑end stage of junior rol.
+  </p>
+  <div class="cta-row">
+    <a class="btn primary" href="#projects">Bekijk projecten</a>
+    <a class="btn" href="mailto:anwar@example.com">Stuur een mail</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" id="projects">
+  <h2>Projecten</h2>
+  <div class="grid">
+    <!-- Project 1: CLI Rekenmachine -->
+    <article class="card">
+      <h3>CLI Rekenmachine (while + break)</h3>
+      <p>Een Node.js rekenmachine die via de terminal vraagt om twee getallen en een bewerking (+, -, *, /), en blijft herhalen tot je 'N' invoert. 
+      Gebruikt <code>prompt-sync</code>, <code>while</code> en <code>break</code>.</p>
+      <div class="meta">
+        <span class="tag">Node.js</span>
+        <span class="tag">JavaScript (ES6)</span>
+        <span class="tag">CLI</span>
+      </div>
+      <div class="links">
+        <a class="link" href="https://github.com/yourusername/cli-calculator" target="_blank" rel="noopener">🔗 View Code</a>
+        <a class="link" href="https://replit.com/@yourusername/cli-calculator" target="_blank" rel="noopener">▶️ Live (Replit)</a>
+      </div>
+    </article>
+
+    <!-- Project 2: Portfolio Website -->
+    <article class="card">
+      <h3>Portfolio Website (deze site)</h3>
+      <p>Een minimalistische, snelle one‑page portfolio in pure HTML/CSS/JS. Inclusief projectkaarten, knop om snippets te kopiëren en nette meta‑tags. Gehost via GitHub Pages.</p>
+      <div class="meta">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">GitHub Pages</span>
+      </div>
+      <div class="links">
+        <a class="link" href="https://github.com/sewpersad-frontend/portfolio-site" target="_blank" rel="noopener">🔗 View Code (GitHub)</a>
+        <a class="link" href="https://sewpersad-frontend.github.io/portfolio-site/" target="_blank" rel="noopener">▶️ Live (GitHub Pages)</a>
+      </div>
+    </article>
+
+    <!-- Project 3: AI Work Productivity Project -->
+    <article class="card">
+      <h3>AI Work Productivity – Implementation Testing</h3>
+      <p>Een evaluatieproject waarin ik de inzet van ChatGPT (GPT‑5) heb getest in mijn workflow voor kleine Node.js opdrachten. Het rapport beschrijft effectiviteit, beperkingen en aanpassingen tijdens de implementatie. Inclusief SMART doelen, observaties en een eind‑snippet van de rekenmachine.</p>
+      <div class="meta">
+        <span class="tag">GenAI</span>
+        <span class="tag">Productivity</span>
+        <span class="tag">Node.js</span>
+      </div>
+      <div class="links">
+        <a class="link" href="https://github.com/sewpersad-frontend/portfolio-site/blob/main/AI-Work-Productivity-Project.md" target="_blank" rel="noopener">🔗 View Report</a>
+        <a class="link" href="https://sewpersad-frontend.github.io/portfolio-site/#projects" target="_blank" rel="noopener">▶️ Live in Portfolio</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>📩 <a href="mailto:anwar@example.com">anwar@example.com</a> · 🌐 <a href="https://modernexecutive.myshopify.com" target="_blank" rel="noopener">modernexecutive.myshopify.com</a> · 📍 NL/BE</p>
+</section>
+
+<footer>
+  © <span id="year"></span> Mohamed Anwar Sewpersad — Gemaakt met liefde en koffie.
+</footer>
+```
+
+  </div>
+
+  <script>
+    // huidig jaar
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
