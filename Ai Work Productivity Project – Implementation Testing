@@ -1,3 +1,16 @@
+<!--
+Project: Portfolio Website
+
+Doel:
+Dit portfolio is gebouwd om mijn projecten en skills te tonen.
+Ik heb ChatGPT gebruikt voor design-suggesties, uitleg over CSS grid/flexbox
+en om de projectkaarten en responsiviteit goed op te zetten.
+
+Belangrijk:
+De focus ligt niet alleen op code, maar op het leerproces en hoe AI mij hielp
+om dit project sneller en overzichtelijker te maken.
+-->
+
 <!doctype html>
 
 <html lang="nl">
